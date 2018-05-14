@@ -1,0 +1,79 @@
+* {
+    font-size: 14px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+.toggle {
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    z-index: 2;
+}
+
+.toggle a {
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+    color: white;
+    transform: .5s;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.active {
+    animation: myani;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myani {
+    from {left: -100%;}
+    to {left: 0%;}
+}
+
+header {
+    position: relative;
+    top: 10%;
+}
