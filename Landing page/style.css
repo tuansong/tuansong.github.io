@@ -83,7 +83,6 @@ header {
     list-style-type: none;
     font-size: 1.5em;
 
-    position: absolute;
     right: -3%;
     top: 45%;
 }
@@ -102,3 +101,12 @@ header {
 .social li:nth-child(2) a:hover { color: #00acee }
 .social li:nth-child(3) a:hover { color: #ea4c89 }
 .social li:nth-child(4) a:hover { color: #dd4b39 }
+
+@media only screen and (max-width:500px){
+    .social {
+        right: 8%;
+    }
+    .parallelogram {
+        display: none;
+    }
+}
