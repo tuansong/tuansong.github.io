@@ -16,6 +16,12 @@
 
 }
 
+.navbar-brand {
+    font-size: 2em;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
 header {
     position: relative;
     height: 100vh;
@@ -106,7 +112,29 @@ header {
     .social {
         right: 8%;
     }
+    .navbar-brand {
+        font-size: 2.25em;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+
     .parallelogram {
         display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .social {
+        right: 5%;
+    }
+    .parallelogram {
+        width: 76%;
+        height: 50%;
+    }
+}
+
+@media (min-width:1800px){
+    * {
+        font-size: 105%;
     }
 }
