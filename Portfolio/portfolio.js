@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".info").css("display","none");
     });
 
-    $(".toppage").click(function(){
-        $("window").scrollTo(".navbar");
+    $(".top-page").click(function(){
+        $(window).scrollTop($('.navbar').offset().top);
     });
 });
