@@ -118,31 +118,19 @@ header .container {
     padding: 1em 0;
 }
 
-.project .row .img-gallery {
+.project .row .img-gallery,.second-gallery {
     width: 100%;
     height: 300px;
 }
-
+/* First gallery */
 .project .row .img-gallery:first-child {
-    background: url(https://www.w3schools.com/w3images/chicago.jpg);
+    background: url(https://i.imgur.com/7FEVhNc.png);
     background-position: center;
     background-size: cover;
 }
 
 .project .row .img-gallery:nth-child(2) {
-    background: url(https://images.unsplash.com/photo-1480264104733-84fb0b925be3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f7dc071673a7213b24926db00cda2d7&auto=format&fit=crop&w=1500&q=80);
-    background-position: center;
-    background-size: cover;
-}
-
-.project .row .img-gallery:nth-child(3) {
-    background: url(https://i.imgur.com/1JV675o.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.project .row .img-gallery:nth-child(4) {
-    background: url(https://i.imgur.com/UOZxFBS.png);
+    background: url(https://i.imgur.com/qZEDZ4d.png);
     background-position: center;
     background-size: cover;
 }
@@ -166,4 +154,29 @@ header .container {
 @keyframes fadein {
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+/* Second gallery */
+.project .row .second-gallery:first-child {
+    background: url(https://i.imgur.com/UOZxFBS.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(2) {
+    background: url(https://i.imgur.com/gKomrya.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(3) {
+    background: url(https://i.imgur.com/ib9oIk5.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(4) {
+    background: url(https://i.imgur.com/0ulmq0p.png);
+    background-position: center;
+    background-size: cover;
 }
