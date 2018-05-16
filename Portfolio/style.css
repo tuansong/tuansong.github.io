@@ -1,79 +1,169 @@
 * {
     font-size: 14px;
-    font-family: 'Fira Sans', sans-serif;
-}
-
-body {
-    margin: 0;
 }
 
 @media (min-width: 768px) {
-    * {
-        font-size: 16px;
+    * { font-size: 16px };
+}
+
+.navbar-right a {
+    color: white;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+
+}
+
+.navbar-brand {
+    font-size: 2em;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+@media only screen and (max-width:500px){
+    .social {
+        right: 8%;
+    }
+    .navbar-brand {
+        font-size: 2.25em;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .social {
+        right: 5%;
+    }
+    .parallelogram {
+        width: 76%;
+        height: 50%;
     }
 }
 
-.toggle {
-    position: fixed;
-    top: 5%;
-    right: 10%;
-    z-index: 2;
-}
-
-.toggle a {
-    text-decoration: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.menu {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: black;
-    color: white;
-    transform: .5s;
-}
-
-.menu ul {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.menu ul li {
-    list-style: none;
-}
-
-.menu ul li a{
-    padding: 0.5em;
-    display: inline-block;
-    font-size: 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.active {
-    animation: myani;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes myani {
-    from {left: -100%;}
-    to {left: 0%;}
-}
-
 header {
+    height: 100vh;
     position: relative;
     top: 10%;
+}
+
+@media (max-width: 1024px){
+    header {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 500px){
+    header {
+        height: 32vh;
+    }
+
+    .container .myName {
+        font-size: 1em;
+    }
+}
+
+header .container {
+    position: relative;
+    top: 10%;
+}
+
+#myVideo {
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: -15%;
+    left: 0px;
+    z-index: -1;
+}
+
+.container .btn-light {
+    background-color: transparent;
+    color: white;
+}
+
+.container .btn-light:hover {
+    background-color: white;
+    color: gray;
+}
+
+.container .myName {
+    font-size: 1.5em;
+}
+
+.about {
+    background-color:white;
+}
+
+.myAvatar {
+    width: 70%;
+    border-radius: 100%;
+}
+
+.progress {
+    margin: 0.5em 0;
+    
+}
+
+
+.project {
+    background-color: gainsboro;
+    margin-top: 5%;
+}
+
+.section-header {
+    padding: 1em 0;
+}
+
+.project .row .img-gallery {
+    width: 100%;
+    height: 300px;
+}
+
+.project .row .img-gallery:first-child {
+    background: url(https://www.w3schools.com/w3images/chicago.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .img-gallery:nth-child(2) {
+    background: url(https://images.unsplash.com/photo-1480264104733-84fb0b925be3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f7dc071673a7213b24926db00cda2d7&auto=format&fit=crop&w=1500&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .img-gallery:nth-child(3) {
+    background: url(https://i.imgur.com/1JV675o.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .img-gallery:nth-child(4) {
+    background: url(https://i.imgur.com/UOZxFBS.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-gallery .info {
+    display: none;
+}
+
+.infoshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
