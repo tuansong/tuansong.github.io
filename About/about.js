@@ -3,6 +3,11 @@ $(document).ready(function(){
         console.log("hello");
          $(".navbar").toggleClass("bg-light", $(this).scrollTop() > $(".navbar").height());
      });
+
+    //  $("#contact").click(function(){
+    //      console.log("test");
+    //     $(window).scrollTop($('.middle-img').offset().top);
+    // });
 })
 
 // function myMap() {
