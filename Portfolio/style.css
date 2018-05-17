@@ -147,13 +147,13 @@ header .container {
 }
 
 /* First gallery */
-.project .row .img-gallery:nth-child(1) {
+.project .row .first-gallery:nth-child(1) {
     background: url(https://i.imgur.com/7FEVhNc.png);
     background-position: center;
     background-size: cover;
 }
 
-.project .row .img-gallery:nth-child(2) {
+.project .row .first-gallery:nth-child(2) {
     background: url(https://i.imgur.com/qZEDZ4d.png);
     background-position: center;
     background-size: cover;
@@ -164,12 +164,16 @@ header .container {
     display: none;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     height: 100%;
 
     animation-name: fadein;
     animation-duration: 2s;
     animation-fill-mode: backwards;
+}
+
+.info .btn {
+    width: 50%;
+    margin: 0 auto;
 }
 
 @keyframes fadein {

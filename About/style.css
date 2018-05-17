@@ -17,10 +17,11 @@
 
 }
 
-.navbar-scroll {
+.navbar-scrolling {
     color: white !important;
     background-color: gray !important;
 }
+
 
 .navbar-brand {
     font-size: 2em;
