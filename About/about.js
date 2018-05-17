@@ -1,7 +1,7 @@
 $(document).ready(function(){
      $(document).scroll(function(){
         console.log("hello");
-         $(".navbar").toggleClass("bg-dark", $(this).scrollTop() > $(".navbar").height());
+         $(".navbar").toggleClass("bg-light", $(this).scrollTop() > $(".navbar").height());
      });
 })
 

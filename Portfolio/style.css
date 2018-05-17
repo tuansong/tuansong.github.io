@@ -188,6 +188,8 @@ header .container {
 .info .btn {
     width: 50%;
     margin: 0 auto;
+    position: relative;
+    top: -20%;
 }
 
 @keyframes fadein {

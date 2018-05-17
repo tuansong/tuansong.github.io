@@ -74,15 +74,16 @@ section {
 }
 
 .about {
-    background-color:white;
+    background: linear-gradient(white, #dad7d7);
     padding-bottom: 2em;
 }
 
 .myAvatar {
     width: 50%;
     height: 50%;
-    /* border-radius: 100%;
-    box-shadow: 3px grey; */
+    border-radius: 35%;
+    filter: grayscale(5px);
+    box-shadow: 3px grey;
 }
 
 .progress {
