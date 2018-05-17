@@ -81,7 +81,8 @@ section {
 .myAvatar {
     width: 50%;
     height: 50%;
-    border-radius: 100%;
+    /* border-radius: 100%;
+    box-shadow: 3px grey; */
 }
 
 .progress {
