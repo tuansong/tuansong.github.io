@@ -57,15 +57,15 @@ header {
 }
 
 @media (max-width: 1024px){
-    header {
+    /* header {
         height: 40vh;
-    }
+    } */
 }
 
 @media (max-width: 500px){
-    header {
+    /* header {
         height: 32vh;
-    }
+    } */
 
     .container .myName {
         font-size: 1em;
@@ -77,13 +77,12 @@ header .container {
     /* top: 10%; */
 }
 
-#myVideo {
-    background-size: cover;
-    position: absolute;
+
+#particles-js {
     width: 100%;
-    top: -15%;
-    left: 0px;
-    z-index: -1;
+    height: 100%;
+    position: absolute;
+    background-color: #212529
 }
 
 
@@ -118,12 +117,16 @@ header .container {
 
 
 .about {
-    background-color:white;
+    background: linear-gradient(white, #dad7d7);
+    padding-bottom: 2em;
 }
 
 .myAvatar {
-    width: 70%;
-    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 35%;
+    filter: grayscale(5px);
+    box-shadow: 3px grey;
 }
 
 .progress {
@@ -238,6 +241,26 @@ header .container {
 .project .row .third-gallery:nth-child(2) {
     background: url(https://i.imgur.com/1JV675o.png);
     background-position: center;
+    background-size: cover;
+}
+
+.middle-img {
+    width: 100%;
+    height: 80vh;
+    background: url(https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c63357d1e6bdc82b5f166c5fb8314bb5&auto=format&fit=crop&w=1566&q=80);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    filter: grayscale(80%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 

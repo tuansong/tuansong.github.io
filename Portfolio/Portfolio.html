@@ -15,10 +15,7 @@
 <body>
     
     <header class="text-center mx-auto d-flex align-items-center text-light">
-            <video autoplay muted loop id="myVideo">
-                <source src="https://i.imgur.com/GdDklVH.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-            </video>
+            <div id="particles-js"></div>
             <div class="container">
                 <h1 class="text-danger"><span class="myName text-light">TusoTR's</span> Portfolio</h1>
                 <button class="btn btn-light btn-lg top-page">View my work<i class="fas fa-arrow-alt-right" style="font-size: 1.5em"></i></button>
@@ -34,13 +31,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="javascript:my_function()" id="port">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../About/about.html">About</a>
+                                <a class="nav-link" href="javascript:my_function()" id="about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="javascript:my_function()" id="contact">Contact</a>
                             </li>
                         </ul>
                         <div class="navbar-right">
@@ -50,11 +47,62 @@
                         </div>
                     </div>
                 </nav>
+        <div class="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h1>About Me</h1>
+                    <hr style="width: 10%; border-bottom: 3px solid #7c838c">
+                </div>
+                <div class="row pt-4">
+                        <div class="col-md-6 col-sm-12 text-center rounded">
+                            <img class="myAvatar" class="img-thumbnail" src="https://i.imgur.com/dFGFgkI.jpg" alt="It's me">
+                            <h2>Heyyy!! It's me, Song</h2>
+                            <h4>Jr Frontend Developer</h4>
+                            <p style="font-family: 'Ubuntu', sans-serif;">My fullname is Tran Tuan Song and i am 22. I like to learn and build everything from scratch. Always try to catch up new technologies and want to become a professional developer in the furture </p>
+                            <p>My hobby is playing sport, playing video games and traveling </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>HTML</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                            <h4>CSS</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                            <h4>Javascript</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                            </div>
+                            <h4>Bootstrap 3&4</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                            <h4>Jquery</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                            </div>
+                            <h4>SASS</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h4>Wordpress</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
         <div class="project">
                 <div class="container">
+                        <div class="section-header text-center">
+                                <h1>Portfolio</h1>
+                                <hr style="width: 10%; border-bottom: 3px solid #7c838c">
+                            </div>
                     <div class="section-header text-center">
-                        <h1>Some pages without responsive</h1>
-                        <hr style="width: 10%; border-bottom: 3px solid">
+                        <h3>2 projects without responsive</h3>
+                        <p>We build these in the first week of class with pure HTML and CSS</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6 img-gallery first-gallery">
@@ -77,8 +125,9 @@
                     </div>
 
                     <div class="section-header text-center">
-                        <h1>Projects with responsive</h1>
-                        <hr style="width: 10%; border-bottom: 3px solid">
+                        <h3>Projects with responsive</h3>
+
+                        <hr style="width: 10%; border-bottom: 3px solid #7c838c">
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-sm-6 second-gallery img-gallery">
@@ -133,8 +182,8 @@
                         </div> -->
                     </div>
                     <div class="section-header text-center">
-                        <h1>Other</h1>
-                        <hr style="width: 10%; border-bottom: 3px solid">
+                        <h3>Other</h3>
+                        <hr style="width: 10%; border-bottom: 3px solid #7c838c">
                     </div>
                     <div class="row">
                         <div class="col-md-6 third-gallery img-gallery">
@@ -159,7 +208,39 @@
 
                 </div>
         </div>
-        
+        <div class="middle-img">
+                <h1 class="text-light">CONTACT</h1>
+                <hr style="width: 10%; border-bottom: 3px solid #7c838c">
+                <div class="contact">
+                        <div class="container text-center text-light">
+                            <i>How to contact with me or want to work together ?
+                                <i>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-10">
+                                            <div class="form text-left">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputEmail4">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="inputName4">Name</label>
+                                                            <input type="text" class="form-control" id="inputName4" placeholder="Your name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <label for="exampleFormControlTextarea1">Your message</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                          </div>
+                                                    <button class="btn btn-dark">Send message</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        </div>
+                
+            </div>
+            
         </section>
         <footer class="bg-dark">
             <div class="container text-center">
@@ -169,9 +250,10 @@
                     <h5 class="text-light">Song Tran Tuan 2018&copy</h5>
             </div>
         </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
