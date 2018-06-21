@@ -208,24 +208,36 @@ header .container {
 }
 
 .project .row .second-gallery:nth-child(2) {
-    background: url(https://i.imgur.com/gKomrya.png);
+    background: url(https://i.imgur.com/GEauKw4.png);
     background-position: center;
     background-size: cover;
 }
 
 .project .row .second-gallery:nth-child(3) {
-    background: url(https://i.imgur.com/ib9oIk5.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.project .row .second-gallery:nth-child(4) {
-    background: url(https://i.imgur.com/0ulmq0p.png);
+    background: url(https://i.imgur.com/jsE6fGV.png);
     background-position: center;
     background-size: cover;
 }
 
 .project .row .second-gallery:nth-child(5) {
+    background: url(https://i.imgur.com/gKomrya.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(6) {
+    background: url(https://i.imgur.com/ib9oIk5.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(7) {
+    background: url(https://i.imgur.com/0ulmq0p.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project .row .second-gallery:nth-child(8) {
     background: url(https://i.imgur.com/dyyOGD7.png);
     background-position: center;
     background-size: cover;
