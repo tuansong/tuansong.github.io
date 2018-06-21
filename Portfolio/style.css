@@ -219,6 +219,12 @@ header .container {
     background-size: cover;
 }
 
+.project .row .second-gallery:nth-child(4) {
+    background: url(https://i.imgur.com/ZrZ4GM5.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .project .row .second-gallery:nth-child(5) {
     background: url(https://i.imgur.com/gKomrya.png);
     background-position: center;
@@ -290,4 +296,10 @@ footer .container i {
 
 .img-gallery:hover {
     transform: scale(1.005);
+}
+
+@media (max-width : 500px) {
+    .img-gallery {
+        margin: 10px;
+    }
 }
